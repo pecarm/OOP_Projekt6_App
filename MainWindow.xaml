@@ -1,0 +1,132 @@
+﻿<Window x:Class="OOP_Projekt6_App.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OOP_Projekt6_App"
+        mc:Ignorable="d"
+        Title="Reservations" Height="600" Width="800">
+    <Grid>
+        <Grid HorizontalAlignment="Left" Height="280" Margin="10,10,0,0" VerticalAlignment="Top" Width="380" x:Name="Seats">
+            <Button Content="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Name="Btn1" Click="Btn1_Click"/>
+            <Button Content="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="38,0,0,0" Name="Btn2" Click="Btn1_Click"/>
+            <Button Content="3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="76,0,0,0" Name="Btn3" Click="Btn1_Click"/>
+            <Button Content="4" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="114,0,0,0" Name="Btn4" Click="Btn1_Click"/>
+            <Button Content="5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="152,0,0,0" Name="Btn5" Click="Btn1_Click"/>
+            <Button Content="6" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="190,0,0,0" Name="Btn6" Click="Btn1_Click"/>
+            <Button Content="7" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="228,0,0,0" Name="Btn7" Click="Btn1_Click"/>
+            <Button Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="266,0,0,0" Name="Btn8" Click="Btn1_Click"/>
+            <Button Content="9" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="304,0,0,0" Name="Btn9" Click="Btn1_Click"/>
+            <Button Content="10" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="342,0,0,0" Name="Btn10" Click="Btn1_Click"/>
+            <Button Content="11" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="0,35,0,0" Name="Btn11" Click="Btn1_Click"/>
+            <Button Content="12" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="38,35,0,0" Name="Btn12" Click="Btn1_Click"/>
+            <Button Content="13" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="76,35,0,0" Name="Btn13" Click="Btn1_Click"/>
+            <Button Content="14" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="114,35,0,0" Name="Btn14" Click="Btn1_Click"/>
+            <Button Content="15" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="152,35,0,0" Name="Btn15" Click="Btn1_Click"/>
+            <Button Content="16" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="190,35,0,0" Name="Btn16" Click="Btn1_Click"/>
+            <Button Content="17" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="228,35,0,0" Name="Btn17" Click="Btn1_Click"/>
+            <Button Content="18" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="266,35,0,0" Name="Btn18" Click="Btn1_Click"/>
+            <Button Content="19" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="304,35,0,0" Name="Btn19" Click="Btn1_Click"/>
+            <Button Content="20" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="342,35,0,0" Name="Btn20" Click="Btn1_Click"/>
+            <Button Content="21" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="0,70,0,0" Name="Btn21" Click="Btn1_Click"/>
+            <Button Content="22" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="38,70,0,0" Name="Btn22" Click="Btn1_Click"/>
+            <Button Content="23" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="76,70,0,0" Name="Btn23" Click="Btn1_Click"/>
+            <Button Content="24" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="114,70,0,0" Name="Btn24" Click="Btn1_Click"/>
+            <Button Content="25" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="152,70,0,0" Name="Btn25" Click="Btn1_Click"/>
+            <Button Content="26" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="190,70,0,0" Name="Btn26" Click="Btn1_Click"/>
+            <Button Content="27" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="228,70,0,0" Name="Btn27" Click="Btn1_Click"/>
+            <Button Content="28" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="266,70,0,0" Name="Btn28" Click="Btn1_Click"/>
+            <Button Content="29" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="304,70,0,0" Name="Btn29" Click="Btn1_Click"/>
+            <Button Content="30" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="342,70,0,0" Name="Btn30" Click="Btn1_Click"/>
+            <Button Content="31" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="0,105,0,0" Name="Btn31" Click="Btn1_Click"/>
+            <Button Content="32" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="38,105,0,0" Name="Btn32" Click="Btn1_Click"/>
+            <Button Content="33" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="76,105,0,0" Name="Btn33" Click="Btn1_Click"/>
+            <Button Content="34" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="114,105,0,0" Name="Btn34" Click="Btn1_Click"/>
+            <Button Content="35" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="152,105,0,0" Name="Btn35" Click="Btn1_Click"/>
+            <Button Content="36" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="190,105,0,0" Name="Btn36" Click="Btn1_Click"/>
+            <Button Content="37" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="228,105,0,0" Name="Btn37" Click="Btn1_Click"/>
+            <Button Content="38" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="266,105,0,0" Name="Btn38" Click="Btn1_Click"/>
+            <Button Content="39" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="304,105,0,0" Name="Btn39" Click="Btn1_Click"/>
+            <Button Content="40" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="342,105,0,0" Name="Btn40" Click="Btn1_Click"/>
+            <Button Content="41" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="0,140,0,0" Name="Btn41" Click="Btn1_Click"/>
+            <Button Content="42" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="38,140,0,0" Name="Btn42" Click="Btn1_Click"/>
+            <Button Content="43" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="76,140,0,0" Name="Btn43" Click="Btn1_Click"/>
+            <Button Content="44" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="114,140,0,0" Name="Btn44" Click="Btn1_Click"/>
+            <Button Content="45" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="152,140,0,0" Name="Btn45" Click="Btn1_Click"/>
+            <Button Content="46" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="190,140,0,0" Name="Btn46" Click="Btn1_Click"/>
+            <Button Content="47" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="228,140,0,0" Name="Btn47" Click="Btn1_Click"/>
+            <Button Content="48" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="266,140,0,0" Name="Btn48" Click="Btn1_Click"/>
+            <Button Content="49" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="304,140,0,0" Name="Btn49" Click="Btn1_Click"/>
+            <Button Content="50" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="342,140,0,0" Name="Btn50" Click="Btn1_Click"/>
+            <Button Content="51" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="0,175,0,0" Name="Btn51" Click="Btn1_Click"/>
+            <Button Content="52" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="38,175,0,0" Name="Btn52" Click="Btn1_Click"/>
+            <Button Content="53" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="76,175,0,0" Name="Btn53" Click="Btn1_Click"/>
+            <Button Content="54" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="114,175,0,0" Name="Btn54" Click="Btn1_Click"/>
+            <Button Content="55" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="152,175,0,0" Name="Btn55" Click="Btn1_Click"/>
+            <Button Content="56" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="190,175,0,0" Name="Btn56" Click="Btn1_Click"/>
+            <Button Content="57" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="228,175,0,0" Name="Btn57" Click="Btn1_Click"/>
+            <Button Content="58" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="266,175,0,0" Name="Btn58" Click="Btn1_Click"/>
+            <Button Content="59" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="304,175,0,0" Name="Btn59" Click="Btn1_Click"/>
+            <Button Content="60" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="342,175,0,0" Name="Btn60" Click="Btn1_Click"/>
+            <Button Content="61" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="0,210,0,0" Name="Btn61" Click="Btn1_Click"/>
+            <Button Content="62" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="38,210,0,0" Name="Btn62" Click="Btn1_Click"/>
+            <Button Content="63" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="76,210,0,0" Name="Btn63" Click="Btn1_Click"/>
+            <Button Content="64" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="114,210,0,0" Name="Btn64" Click="Btn1_Click"/>
+            <Button Content="65" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="152,210,0,0" Name="Btn65" Click="Btn1_Click"/>
+            <Button Content="66" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="190,210,0,0" Name="Btn66" Click="Btn1_Click"/>
+            <Button Content="67" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="228,210,0,0" Name="Btn67" Click="Btn1_Click"/>
+            <Button Content="68" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="266,210,0,0" Name="Btn68" Click="Btn1_Click"/>
+            <Button Content="69" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="304,210,0,0" Name="Btn69" Click="Btn1_Click"/>
+            <Button Content="70" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="342,210,0,0" Name="Btn70" Click="Btn1_Click"/>
+            <Button Content="71" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="0,245,0,0" Name="Btn71" Click="Btn1_Click"/>
+            <Button Content="72" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="38,245,0,0" Name="Btn72" Click="Btn1_Click"/>
+            <Button Content="73" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="76,245,0,0" Name="Btn73" Click="Btn1_Click"/>
+            <Button Content="74" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="114,245,0,0" Name="Btn74" Click="Btn1_Click"/>
+            <Button Content="75" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="152,245,0,0" Name="Btn75" Click="Btn1_Click"/>
+            <Button Content="76" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="190,245,0,0" Name="Btn76" Click="Btn1_Click"/>
+            <Button Content="77" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="228,245,0,0" Name="Btn77" Click="Btn1_Click"/>
+            <Button Content="78" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="266,245,0,0" Name="Btn78" Click="Btn1_Click"/>
+            <Button Content="79" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="304,245,0,0" Name="Btn79" Click="Btn1_Click"/>
+            <Button Content="80" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Height="35" Margin="342,245,0,0" Name="Btn80" Click="Btn1_Click"/>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="280" Margin="395,10,0,0" VerticalAlignment="Top" Width="387" Name="GridShows">
+            <DatePicker HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Height="34" Width="160" Name="DatePicker" FirstDayOfWeek="Monday" SelectedDateChanged="DatePicker_SelectedDateChanged"/>
+            <ComboBox HorizontalAlignment="Left" Margin="0,49,0,0" VerticalAlignment="Top" Width="160" Height="33" Name="ComboBoxAvailableShows" SelectionChanged="ComboBoxAvailableShows_SelectionChanged"/>
+            <Label Content="Název představení:" HorizontalAlignment="Left" Margin="0,136,0,0" VerticalAlignment="Top" Width="160"/>
+            <Label Content="" HorizontalAlignment="Left" Margin="160,136,0,0" VerticalAlignment="Top" Width="217" Name="LabelShowName"/>
+            <Label Content="Počet volných míst:" HorizontalAlignment="Left" Margin="0,162,0,0" VerticalAlignment="Top" Width="160"/>
+            <Label Content="" HorizontalAlignment="Left" Margin="160,162,0,0" VerticalAlignment="Top" Width="217" Name="LabelFreeSeats"/>
+            <Label Content="Datum a čas:" HorizontalAlignment="Left" Margin="0,110,0,0" VerticalAlignment="Top" Width="160"/>
+            <Label Content="" HorizontalAlignment="Left" Margin="160,110,0,0" VerticalAlignment="Top" Width="217" Name="LabelDateTime"/>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="130" Margin="10,295,0,0" VerticalAlignment="Top" Width="772" Name="GridReservationMenu">
+            <Label Content="Vybrané sedadlo:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="130"/>
+            <Label Content="" HorizontalAlignment="Left" Margin="145,10,0,0" VerticalAlignment="Top" Width="150" Name="LabelSeatNumber"/>
+            <Label Content="Stav:" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top" Width="130"/>
+            <Label Content="" HorizontalAlignment="Left" Margin="145,38,0,0" VerticalAlignment="Top" Width="150" Name="LabelSeatState"/>
+            <Label Content="Jméno rezervace:" HorizontalAlignment="Left" Margin="10,62,0,0" VerticalAlignment="Top" Width="130"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="145,67,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="150" Name="TextBoxReservationName"/>
+            <Button Content="Rezervovat" HorizontalAlignment="Left" Margin="459,16,0,0" VerticalAlignment="Top" Width="90" Name="ButtonMakeReservation" Height="40" Click="ButtonMakeReservation_Click"/>
+            <Button Content="Zrušit rezervaci" HorizontalAlignment="Left" Margin="459,61,0,0" VerticalAlignment="Top" Width="90" x:Name="ButtonCancelReservation" Height="40" Click="ButtonCancelReservation_Click"/>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="129" Margin="10,430,0,0" VerticalAlignment="Top" Width="772" Name="AddShowGrid">
+            <Label Content="PŘIDAT NOVÉ PŘEDSTAVENÍ" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="200" FontSize="15"/>
+            <Label Content="Název představení:" HorizontalAlignment="Left" Margin="10,45,0,0" VerticalAlignment="Top" Width="130"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="145,45,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="200" Name="TextBoxShowName"/>
+            <DatePicker HorizontalAlignment="Left" Margin="145,73,0,0" VerticalAlignment="Top" Width="140" Name="DatePickerAdd"/>
+            <Label Content="Datum konání:" HorizontalAlignment="Left" Margin="10,71,0,0" VerticalAlignment="Top" Width="130"/>
+            <Label Content="Čas konání:" HorizontalAlignment="Left" Margin="10,97,0,0" VerticalAlignment="Top" Width="130"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="145,100,0,0" TextWrapping="Wrap" Text="HH" VerticalAlignment="Top" Width="50" MaxLength="2" MaxLines="3" TextAlignment="Center" Name="TextBoxHour"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="200,100,0,0" TextWrapping="Wrap" Text="MM" VerticalAlignment="Top" Width="50" MaxLength="2" MaxLines="3" TextAlignment="Center" Name="TextBoxMinute"/>
+            <Button Content="Přidat" HorizontalAlignment="Left" Margin="270,100,0,0" VerticalAlignment="Top" Width="75" Height="23" Name="ButtonAddShow" Click="ButtonAddShow_Click"/>
+            <DatePicker HorizontalAlignment="Left" Margin="570,45,0,0" VerticalAlignment="Top" Width="140" Name="DatePickerRemove" SelectedDateChanged="DatePickerRemove_SelectedDateChanged" FirstDayOfWeek="Monday"/>
+            <Label Content="Datum konání:" HorizontalAlignment="Left" Margin="435,43,0,0" VerticalAlignment="Top" Width="130"/>
+            <Label Content="Čas konání:" HorizontalAlignment="Left" Margin="435,69,0,0" VerticalAlignment="Top" Width="130"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="570,72,0,0" TextWrapping="Wrap" Text="HH" VerticalAlignment="Top" Width="50" MaxLength="2" MaxLines="3" TextAlignment="Center" Name="TextBoxHourRemove"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="625,72,0,0" TextWrapping="Wrap" Text="MM" VerticalAlignment="Top" Width="50" MaxLength="2" MaxLines="3" TextAlignment="Center" Name="TextBoxMinuteRemove"/>
+            <Label Content="ODEBRAT PŘEDSTAVENÍ" HorizontalAlignment="Left" Margin="444,7,0,0" VerticalAlignment="Top" Width="200" FontSize="15"/>
+            <Label Content="" HorizontalAlignment="Left" Margin="435,95,0,0" VerticalAlignment="Top" Width="200" Name="LabelShowNameRemove"/>
+            <Button Content="Odebrat" HorizontalAlignment="Left" Margin="687,100,0,0" VerticalAlignment="Top" Width="75" Height="23" x:Name="ButtonRemoveShow" Click="ButtonRemoveShow_Click"/>
+        </Grid>
+    </Grid>
+</Window>

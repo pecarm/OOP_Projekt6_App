@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:55795/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:55795/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:55795/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/OOP_Projekt6_WebService" />
+      <xsd:import schemaLocation="http://localhost:55795/Service1.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_GetData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetData" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetDataUsingDataContract_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataUsingDataContract" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetDataUsingDataContract_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataUsingDataContractResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddShow_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddShow" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddShow_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddShowResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteShow_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteShow" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteShow_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteShowResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetSeatingInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSeatingInfo" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetSeatingInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSeatingInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetReservationName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetReservationName" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetReservationName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetReservationNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetShows_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetShows" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetShows_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetShowsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetShowsByName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetShowsByName" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetShowsByName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetShowsByNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetShowsByDate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetShowsByDate" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetShowsByDate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetShowsByDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_MakeReservation_InputMessage">
+    <wsdl:part name="parameters" element="tns:MakeReservation" />
+  </wsdl:message>
+  <wsdl:message name="IService1_MakeReservation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MakeReservationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CancelReservation_InputMessage">
+    <wsdl:part name="parameters" element="tns:CancelReservation" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CancelReservation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CancelReservationResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="GetData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetData" message="tns:IService1_GetData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetDataResponse" message="tns:IService1_GetData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataUsingDataContract">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetDataUsingDataContract" message="tns:IService1_GetDataUsingDataContract_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetDataUsingDataContractResponse" message="tns:IService1_GetDataUsingDataContract_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddShow">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AddShow" message="tns:IService1_AddShow_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AddShowResponse" message="tns:IService1_AddShow_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteShow">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeleteShow" message="tns:IService1_DeleteShow_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeleteShowResponse" message="tns:IService1_DeleteShow_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSeatingInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetSeatingInfo" message="tns:IService1_GetSeatingInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetSeatingInfoResponse" message="tns:IService1_GetSeatingInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReservationName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetReservationName" message="tns:IService1_GetReservationName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetReservationNameResponse" message="tns:IService1_GetReservationName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetShows">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetShows" message="tns:IService1_GetShows_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetShowsResponse" message="tns:IService1_GetShows_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetShowsByName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetShowsByName" message="tns:IService1_GetShowsByName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetShowsByNameResponse" message="tns:IService1_GetShowsByName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetShowsByDate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetShowsByDate" message="tns:IService1_GetShowsByDate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetShowsByDateResponse" message="tns:IService1_GetShowsByDate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MakeReservation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/MakeReservation" message="tns:IService1_MakeReservation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/MakeReservationResponse" message="tns:IService1_MakeReservation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CancelReservation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/CancelReservation" message="tns:IService1_CancelReservation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/CancelReservationResponse" message="tns:IService1_CancelReservation_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetData">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataUsingDataContract">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetDataUsingDataContract" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddShow">
+      <soap:operation soapAction="http://tempuri.org/IService1/AddShow" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteShow">
+      <soap:operation soapAction="http://tempuri.org/IService1/DeleteShow" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSeatingInfo">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetSeatingInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReservationName">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetReservationName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetShows">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetShows" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetShowsByName">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetShowsByName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetShowsByDate">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetShowsByDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MakeReservation">
+      <soap:operation soapAction="http://tempuri.org/IService1/MakeReservation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelReservation">
+      <soap:operation soapAction="http://tempuri.org/IService1/CancelReservation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://localhost:55795/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
