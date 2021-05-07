@@ -257,6 +257,11 @@ namespace OOP_Projekt6_App
 
         private void UpdateColours()
         {
+            if (ComboBoxAvailableShows.SelectedItem == null)
+            {
+                return;
+            }
+
             string[] temp = ComboBoxAvailableShows.SelectedItem.ToString().Split(';');
             Dictionary<int, bool?> seats = service.GetSeatingInfo(Convert.ToDateTime(temp[0]));
 
@@ -292,6 +297,11 @@ namespace OOP_Projekt6_App
 
         private void UpdateFreeSeats()
         {
+            if (ComboBoxAvailableShows.SelectedItem == null)
+            {
+                return;
+            }
+
             string[] temp = ComboBoxAvailableShows.SelectedItem.ToString().Split(';');
             Dictionary<int, bool?> seats = service.GetSeatingInfo(Convert.ToDateTime(temp[0]));
 
