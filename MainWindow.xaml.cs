@@ -29,6 +29,12 @@ namespace OOP_Projekt6_App
 
         private void ButtonAddShow_Click(object sender, RoutedEventArgs e)
         {
+
+            if(DatePickerAdd.SelectedDate == null)
+            {
+                return;
+            }
+
             DateTime date = (DateTime)DatePickerAdd.SelectedDate;
 
             DateTime dthours = new DateTime();
@@ -67,6 +73,12 @@ namespace OOP_Projekt6_App
 
         private void ButtonRemoveShow_Click(object sender, RoutedEventArgs e)
         {
+
+            if (DatePickerRemove.SelectedDate == null)
+            {
+                return;
+            }
+
             DateTime date = (DateTime)DatePickerRemove.SelectedDate;
             DateTime dthours = new DateTime();
             DateTime dateTime = new DateTime();
@@ -226,6 +238,11 @@ namespace OOP_Projekt6_App
 
         private void ButtonMakeReservation_Click(object sender, RoutedEventArgs e)
         {
+            if(ComboBoxAvailableShows.SelectedItem == null)
+            {
+                return;
+            }
+
             string[] temp = ComboBoxAvailableShows.SelectedItem.ToString().Split(';');
 
             if(service.MakeReservation(Convert.ToDateTime(temp[0]), Convert.ToInt32(LabelSeatNumber.Content), TextBoxReservationName.Text))
@@ -257,7 +274,11 @@ namespace OOP_Projekt6_App
 
         private void ButtonCancelReservation_Click(object sender, RoutedEventArgs e)
         {
-            string[] temp = ComboBoxAvailableShows.SelectedItem.ToString().Split(';');
+            if(ComboBoxAvailableShows.SelectedItem == null) {
+                return;
+            }
+            
+                string[] temp = ComboBoxAvailableShows.SelectedItem.ToString().Split(';');
 
             if (service.CancelReservation(Convert.ToDateTime(temp[0]), Convert.ToInt32(LabelSeatNumber.Content)))
             {
