@@ -147,7 +147,7 @@ namespace OOP_Projekt6_App
 
             foreach (var show in shows)
             {
-                ComboBoxAvailableShows.Items.Add(show.Key.ToString("f") + ", "+ show.Value);
+                ComboBoxAvailableShows.Items.Add(show.Key.ToString("f") + "; "+ show.Value);
             }
         }
 
@@ -158,7 +158,7 @@ namespace OOP_Projekt6_App
                 return;
             }
 
-            string[] temp = ComboBoxAvailableShows.SelectedItem.ToString().Split(',');
+            string[] temp = ComboBoxAvailableShows.SelectedItem.ToString().Split(';');
             temp[1].Trim();
 
             LabelDateTime.Content = temp[0];
@@ -208,7 +208,7 @@ namespace OOP_Projekt6_App
 
                 LabelSeatState.Content = "Obsazeno";
 
-                string[] temp = ComboBoxAvailableShows.SelectedItem.ToString().Split(',');
+                string[] temp = ComboBoxAvailableShows.SelectedItem.ToString().Split(';');
                 TextBoxReservationName.Text = service.GetReservationName(Convert.ToDateTime(temp[0]), Convert.ToInt32(button.Content));
             }
             else
@@ -226,7 +226,7 @@ namespace OOP_Projekt6_App
 
         private void ButtonMakeReservation_Click(object sender, RoutedEventArgs e)
         {
-            string[] temp = ComboBoxAvailableShows.SelectedItem.ToString().Split(',');
+            string[] temp = ComboBoxAvailableShows.SelectedItem.ToString().Split(';');
 
             if(service.MakeReservation(Convert.ToDateTime(temp[0]), Convert.ToInt32(LabelSeatNumber.Content), TextBoxReservationName.Text))
             {
@@ -240,7 +240,7 @@ namespace OOP_Projekt6_App
 
         private void UpdateColours()
         {
-            string[] temp = ComboBoxAvailableShows.SelectedItem.ToString().Split(',');
+            string[] temp = ComboBoxAvailableShows.SelectedItem.ToString().Split(';');
             Dictionary<int, bool?> seats = service.GetSeatingInfo(Convert.ToDateTime(temp[0]));
 
             int i = 0;
@@ -257,7 +257,7 @@ namespace OOP_Projekt6_App
 
         private void ButtonCancelReservation_Click(object sender, RoutedEventArgs e)
         {
-            string[] temp = ComboBoxAvailableShows.SelectedItem.ToString().Split(',');
+            string[] temp = ComboBoxAvailableShows.SelectedItem.ToString().Split(';');
 
             if (service.CancelReservation(Convert.ToDateTime(temp[0]), Convert.ToInt32(LabelSeatNumber.Content)))
             {
@@ -271,7 +271,7 @@ namespace OOP_Projekt6_App
 
         private void UpdateFreeSeats()
         {
-            string[] temp = ComboBoxAvailableShows.SelectedItem.ToString().Split(',');
+            string[] temp = ComboBoxAvailableShows.SelectedItem.ToString().Split(';');
             Dictionary<int, bool?> seats = service.GetSeatingInfo(Convert.ToDateTime(temp[0]));
 
             var count =
